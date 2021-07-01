@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+}
+html{
+  font-size: 62.5%;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.navbar-brand{
+  letter-spacing: .6rem;
+}
+.navbar a{
+  font-size: 1.2rem !important;
+  transition: all .3s linear;
+}
+.navbar a:hover{
+  color: #49465a !important;
+}
+.menu_active{
+  border-bottom: 1px solid #49465a;
+}
+
+/* Main Landing Home page starts here */
+#header{
+width: 100%;
+height: 85vh;
+margin-top: 4rem;
+}
+#header h1{
+  color: #49465a;
+}
+.brandName{
+  color: #536dfe;
+}
+#header h2{
+  color: #b7b4b4;
+}
+#header .btn-get-started{
+  font-weight: 700;
+  font-size: 1.6rem;
+  display: inline-block;
+  letter-spacing: .1rem;
+  border-radius: 5rem;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  border: 2px solid #49465a;
+  transition: .5s;
+  color: #49465a;
+}
+#header .btn-get-started:hover{
+  background-color: #49465a;
+  color: #fff;
+}
+.headerImg{
+  text-align: right;
+}
+#header #animated{
+  animation: upDown 2s ease-in-out infinite alternate-reverse both;
+}
+@keyframes upDown{
+  0%{
+    transform: translateY(1.5rem);
+  }
+  100%{
+    transform: translateY(-1.5rem);
+  }
+}

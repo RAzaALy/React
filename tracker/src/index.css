@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Zen';
+  src: url('./font/ZenDots-Regular.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Zen';
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

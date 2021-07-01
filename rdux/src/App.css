@@ -1,0 +1,138 @@
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.center {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  width: 50%;
+  min-height: 40%;
+  background-color: #f1f1f1;
+  background-color: #3f3d56;
+  box-shadow: 0.5rem 0.5rem 2.5rem -0.5rem rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+}
+h1 {
+  color: rgb(220, 215, 215);
+  padding: 1.5rem 0 1.5rem 0;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  box-shadow: 0.5rem 0.5rem 1.5rem -0.5rem rgba(0, 0, 0, 0.3);
+  text-align: center;
+  font-weight: bolder;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  border-bottom: 3px solid white;
+}
+input {
+  padding: 0.6rem;
+  cursor: pointer;
+  height: 3rem;
+  top: 1rem;
+  border: none;
+  background: transparent;
+  font-size: 1.4rem;
+  font-weight: 500;
+  width: 70%;
+  border-bottom: 0.2rem solid #6077fa;
+  outline: none;
+  color: #f6f6f6;
+  transition: all 0.3s ease-in-out;
+}
+input:focus {
+  border-bottom: 0.2rem solid #20bf6b;
+}
+.Btn {
+  cursor: pointer;
+  outline: none;
+  color: #6077fa;
+  transition: all 0.3s ease-in-out;
+}
+.Btn:hover {
+  color: #20bf6b;
+}
+.Btn:active {
+  transform: scale(0.98);
+}
+.notes {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* top: 60%; */
+  width: 40%;
+  border-radius: 0.5rem;
+}
+.noteStyle {
+  min-width: 40rem;
+  padding: 1rem;
+  background-color: #3f3d56;
+  margin: 1rem 0rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  box-shadow: 0.5rem 0.5rem 2.5rem -0.5rem rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 4rem;
+}
+.noteStyle h2 {
+  margin-left: 0.6rem;
+  color: #eee;
+}
+.noteStyle .trash {
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.noteStyle .trash:hover {
+  color: rgb(211, 96, 119);
+}
+.trash:active {
+  transform: scale(0.98);
+}
+.edit {
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.edit:hover {
+  color: #20bf6b;
+}
+.edit:active {
+  transform: scale(0.98);
+}
+@media (max-width: 768px) {
+  button {
+    margin-left: 0.5rem;
+    min-height: 2rem;
+    font-size: 0.7rem;
+  }
+  .clear {
+    width: 8rem;
+    left: 40%;
+  }
+}
+.clear {
+  position: absolute !important;
+  top: 80%;
+  left: 40%;
+  font-size: 1.2rem;
+  width: 1rem;
+  background-color: #536dfe !important;
+  transition: all 0.3s ease-in-out;
+}
+.clear:hover {
+  color: #ffff;
+}
+.logo {
+  color: white !important;
+  font-size: large !important;
+}
